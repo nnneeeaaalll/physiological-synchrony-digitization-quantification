@@ -1,7 +1,7 @@
  
 # Occlusion-Aware Plot Digitization & Spectral Surrogate Testing
 
-**Live Rendered Report:** [View Quarto HTML Output](https://<your-username>.github.io/<your-repo-name>/)
+**Live Rendered Report:** [View Quarto HTML Output](https://nnneeeaaalll.github.io/physiological-synchrony-digitization-quantification/)
 
 ## Overview
 Standard automated plot-digitizing tools rely on linear or spline interpolation across missing segments. When two positively correlated physiological time series are plotted with opaque strokes, occlusion occurs preferentially at shared peaks and troughs—causing standard interpolation to attenuate cross-correlation and distort high-frequency power.
