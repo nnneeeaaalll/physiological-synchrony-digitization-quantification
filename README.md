@@ -13,6 +13,8 @@ This repository provides a transparent, self-contained Python/Quarto pipeline th
 This pipeline demonstrates the analysis workflow on a **figure-level replication** of physiological temperature traces from an unpublished study (`Code_Generated_Image.png`). Because the input here is a rasterized summary plot rather than raw sensor data, minor differences relative to the original raw-data metrics are expected due to pixel quantization and finite stroke thickness during overlapping intervals.
 
 ## Repository Contents
+* `Temperature_Overview_Panel_A.png` — Panel A from the source figure, showing the windows marked B and C.
+* `physiological_synchrony_end_to_end3.py` — Updated standalone Python script.
 * `physiological_synchrony_end_to_end.qmd` — Primary Quarto source document combining narrative, extraction code, diagnostic plots, and surrogate testing.
 * `physiological_synchrony_end_to_end.ipynb` — Executed Jupyter Notebook with saved inline outputs.
 * `Code_Generated_Image.png` — Source figure image used for reproducible extraction.

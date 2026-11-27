@@ -5,10 +5,14 @@ jupyter: python3
 
 
 This notebook implements a fully transparent, reproducible pipeline that:
-1. **Loads and crops** the source slide image (`Code_Generated_image.png`) into Day (Panel B, 12 h) and Night (Panel C, 8 h) regions of interest.
+1. **Loads and crops** the source slide image (`Code_Generated_Image.png`) into Day (Panel B, 12 h) and Night (Panel C, 8 h) regions of interest.
 2. **Extracts overlapping time series** via RGB chromaticity/luminance thresholding and **occlusion-aware reconstruction** (`mal[t] = fem[t]` where the opaque foreground gray trace obscures the background orange trace), followed by 3-point binomial smoothing (`[0.25, 0.5, 0.25]`) and Z-score standardization.
 3. **Evaluates statistical significance** using FFT phase-randomized surrogate time series (`phaseScrambleTS`), preserving each trace's exact power spectrum and autocorrelation structure while destroying cross-animal phase coupling.
 
+
+![Panel A. Temperature traces from the source figure. The bars labeled B and C mark the day and night windows used in this walkthrough.](Temperature_Overview_Panel_A.png){fig-alt="Gray and orange temperature traces across several light and dark periods, with two intervals marked B and C." width="365px"}
+
+[Download the updated Python script](physiological_synchrony_end_to_end3.py){download=""}
 
 ## 1. Image Loading, Cropping & Occlusion-Aware Extraction
 
